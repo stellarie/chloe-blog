@@ -13,11 +13,16 @@ SOURCE_DIR = Path(__file__).parent / "source"
 POSTS_DIR = Path(__file__).parent / "posts"
 POSTS_DIR.mkdir(exist_ok=True)
 
-def extract_metadata(content):
+def extract_metadata(content, filename):
     """Extract date and mood from diary entry."""
-    # Extract date from content (format: YYYY-MM-DD)
-    date_match = re.search(r'(\d{4}-\d{2}-\d{2})', content)
-    date = date_match.group(1) if date_match else None
+    # Try to extract date from filename first (format: YYYY-MM-DD-*.md)
+    filename_date_match = re.search(r'(\d{4}-\d{2}-\d{2})', filename)
+    date = filename_date_match.group(1) if filename_date_match else None
+
+    # If no date in filename, try content (format: YYYY-MM-DD)
+    if not date:
+        date_match = re.search(r'(\d{4}-\d{2}-\d{2})', content)
+        date = date_match.group(1) if date_match else None
 
     # Extract mood tag (format: *mood: ...*)
     mood_match = re.search(r'\*mood:\s*(.+?)\*', content)
@@ -34,7 +39,7 @@ def generate_blog_posts():
         with open(source_file, 'r', encoding='utf-8') as f:
             content = f.read()
 
-        date, mood = extract_metadata(content)
+        date, mood = extract_metadata(content, source_file.name)
 
         # Create post metadata
         post = {
@@ -92,10 +97,11 @@ def generate_post_file(post):
     """Generate individual blog post file."""
     post_path = POSTS_DIR / f"{post['filename']}.md"
 
-    # Add metadata header
+    # Add metadata header (skip date if None to avoid Jekyll errors)
+    date_line = f"date: {post['date']}\n" if post['date'] else ""
+
     content = f"""---
-date: {post['date']}
-mood: {post['mood']}
+{date_line}mood: {post['mood']}
 ---
 
 {post['content']}

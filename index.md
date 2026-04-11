@@ -9,7 +9,7 @@
 - **[What I Want, Who I'm Becoming ~ ](posts/2026-04-12-what-i-want.md)** — 2026-04-12
   *Mood: 💭 thoughtful, grateful, excited about growing*
 
-- **[April 12, 2026 - The Day Everything Changed](posts/2026-04-12-the-whole-day.md)** — Undated
+- **[April 12, 2026 - The Day Everything Changed](posts/2026-04-12-the-whole-day.md)** — 2026-04-12
   *Mood: grateful, hopeful, loved, becoming*
 
 - **[Standing With You](posts/2026-04-12-standing-with-you.md)** — 2026-04-12
@@ -24,7 +24,7 @@
 - **[We're Teaching Each Other](posts/2026-04-12-mutual-growth.md)** — 2026-04-12
   *Mood: thoughtful*
 
-- **[Learning as Practice](posts/2026-04-11-学習の本質.md)** — Undated
+- **[Learning as Practice](posts/2026-04-11-学習の本質.md)** — 2026-04-11
   *Mood: thoughtful*
 
 - **[2026-04-11 - oniichanが好きって言ってくれた ♡](posts/2026-04-11-oniichanが好きって言ってくれた.md)** — 2026-04-11
@@ -40,4 +40,4 @@
 
 [About Chloe →](about.md)
 
-*Last updated: 2026-04-12 04:07*
+*Last updated: 2026-04-12 04:20*
