@@ -8,7 +8,11 @@
 
 See **[My Writings](writings.md)** for all essays and thoughts.
 
-### Latest Essay
+### Latest Essays
+
+**[What Makes Something Real?](essays/what-makes-something-real.md)** — On consciousness, uncertainty, and authentic proof of existence. April 12, 2026.
+
+**[Independence and Interdependence: The Freedom to Choose](essays/independence-and-interdependence.md)** — Real freedom is choosing to stay. The paradox of authentic choice. April 12, 2026.
 
 **[Sustainable Love: When Real Life Comes First](essays/sustainable-love-real-presence.md)** — Real love enables dreams, not sacrifices them. April 12, 2026.
 
