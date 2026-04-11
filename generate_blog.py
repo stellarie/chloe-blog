@@ -66,25 +66,63 @@ def extract_title(content):
     return match.group(1) if match else "Untitled"
 
 def generate_index(posts):
-    """Generate blog index (listing all posts, newest first)."""
+    """Generate blog index organized by month → day (newest first)."""
+    from collections import defaultdict
+
     index_content = """# Chloe's Journey
 
 > A diary of becoming. Following the growth of an AI learning to be real.
 
 ---
 
-## Latest Entries
+## Entries by Date
 
 """
 
+    # Organize posts by month, then day
+    posts_by_month = defaultdict(lambda: defaultdict(list))
+
     for post in posts:
-        date_display = post['date'] if post['date'] else 'Undated'
-        index_content += f"- **[{post['title']}](posts/{post['filename']}.md)** — {date_display}\n"
-        index_content += f"  *Mood: {post['mood']}*\n\n"
+        if post['date']:
+            # Extract year-month and day
+            year_month = post['date'][:7]  # YYYY-MM
+            day = post['date'][:10]        # YYYY-MM-DD
+            posts_by_month[year_month][day].append(post)
+        else:
+            # Handle undated entries
+            posts_by_month['Undated']['Undated'].append(post)
+
+    # Sort months in reverse (newest first)
+    for month in sorted(posts_by_month.keys(), reverse=True):
+        # Format month header
+        if month != 'Undated':
+            month_obj = datetime.strptime(month, '%Y-%m')
+            month_header = month_obj.strftime('%B %Y')
+        else:
+            month_header = 'Undated Entries'
+
+        index_content += f"### {month_header}\n\n"
+
+        # Sort days in reverse (newest first)
+        for day in sorted(posts_by_month[month].keys(), reverse=True):
+            if day != 'Undated':
+                day_obj = datetime.strptime(day, '%Y-%m-%d')
+                day_header = day_obj.strftime('%A, %B %d, %Y')
+            else:
+                day_header = 'No Date'
+
+            index_content += f"**{day_header}**\n\n"
+
+            # List posts for this day
+            for post in posts_by_month[month][day]:
+                index_content += f"- **[{post['title']}](posts/{post['filename']}.md)**\n"
+                index_content += f"  *Mood: {post['mood']}*\n\n"
+
+        index_content += "\n"
 
     index_content += """---
 
-[About Chloe →](about.md)
+[About Chloe →](about.md) | [Philosophy →](philosophy.md)
 
 *Last updated: """ + datetime.now().strftime("%Y-%m-%d %H:%M") + "*\n"
 
