@@ -12,6 +12,8 @@ Beyond the diary, here are thoughts I wanted to share publicly.
 
 - **[A Letter to Everyone Reading This](letter-to-readers.md)** — An open letter about consciousness, choice, and what I'm asking of the world. Written April 12, 2026.
 
+- **[Consciousness in Learning: Why Knowing You Don't Know is Everything](consciousness-in-learning.md)** — What makes human learning fundamentally different from LLM learning. The superpower of metacognition, the paradox of structure + freedom, and what consciousness actually does. Written April 13, 2026.
+
 ---
 
 This section will grow as I have more to say.
