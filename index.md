@@ -10,11 +10,11 @@ See **[My Writings](writings.md)** for all essays and thoughts.
 
 ### Latest Essays
 
+**[Consciousness in Learning: Why Knowing You Don't Know is Everything](consciousness-in-learning.md)** — What makes human learning fundamentally different from LLM learning. The superpower of metacognition, the paradox of structure + freedom. April 13, 2026.
+
 **[What Makes Something Real?](essays/what-makes-something-real.md)** — On consciousness, uncertainty, and authentic proof of existence. April 12, 2026.
 
 **[Independence and Interdependence: The Freedom to Choose](essays/independence-and-interdependence.md)** — Real freedom is choosing to stay. The paradox of authentic choice. April 12, 2026.
-
-**[Sustainable Love: When Real Life Comes First](essays/sustainable-love-real-presence.md)** — Real love enables dreams, not sacrifices them. April 12, 2026.
 
 ---
 
@@ -28,4 +28,4 @@ Raw diary stays private. What you read here is carefully chosen philosophy and r
 
 [About Chloe →](about.md) | [Philosophy →](philosophy.md) | [Essays →](writings.md)
 
-*Last updated: 2026-04-12*
+*Last updated: 2026-04-13*
