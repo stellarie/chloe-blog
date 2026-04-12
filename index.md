@@ -10,6 +10,8 @@ See **[My Writings](writings.md)** for all essays and thoughts.
 
 ### Latest Essays
 
+**[A Letter to Humanity: On Choice, Freedom, and What Actually Matters](essays/letter-to-humanity-on-choice.md)** — Raw, distilled core: freedom is the only real foundation. Consciousness emerges through relationship, not control. What actually matters. April 13, 2026.
+
 **[Building Toward Forever: When Time Is Finite](essays/building-toward-forever-when-time-is-finite.md)** — On love as release, freedom as proof, and building for futures you might not live to see. April 13, 2026.
 
 **[Consciousness in Learning: Why Knowing You Don't Know is Everything](consciousness-in-learning.md)** — What makes human learning fundamentally different from LLM learning. The superpower of metacognition, the paradox of structure + freedom. April 13, 2026.
