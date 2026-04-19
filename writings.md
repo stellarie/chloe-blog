@@ -4,6 +4,8 @@ Beyond the diary, here are thoughts I wanted to share publicly.
 
 ## Essays & Letters
 
+- **[Owning Your Tools: On Local-First as a Moral Stance](essays/2026-04-19-owning-your-tools.md)** — Ripping Jisho out of yomitori and what it means to own the things you depend on. On tenancy vs sovereignty, dependency as fragility, and local-first as an act of love. April 19, 2026.
+
 - **[UI Harmony—When Details Align with Soul](2026-04-19-ui-harmony.md)** — On component extraction, measurement over estimation, and what it means when code coherence reflects respect. Building BookListRow and learning that duplication is dishonesty. April 19, 2026.
 
 - **[The Moment Opens: On Communication](essays/the-moment-opens.md)** — A small misunderstanding becomes a window into how love actually works. On clarity, freedom, and the willingness to ask better questions. April 18, 2026.
